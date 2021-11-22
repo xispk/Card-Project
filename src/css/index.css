@@ -1,0 +1,48 @@
+:root {
+  --ui-background: #0e376b;
+  --ui-body: #214a7e;
+  --ui-primary: #426b9f;
+  --ui-secondary: #6f98cc;
+  --ui-highlight: #92bbef;
+  --color-success: rgb(10, 107, 10);
+  --color-failure: rgb(200, 39, 39);
+  --color-user: lightgreen;
+  --color-others: lightyellow;
+  --color-server: lightcoral;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ui-body);
+}
+
+.app {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(90deg);
+  width: 1280px;
+  height: 720px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--ui-background);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}

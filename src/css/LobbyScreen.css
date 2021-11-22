@@ -1,0 +1,101 @@
+.lobby .screen__container.modal {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.lobby .buttons {
+  margin-top: 20px;
+}
+
+.lobby .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.btn.success {
+  background-color: var(--color-success);
+}
+
+.btn.failure {
+  background-color: var(--color-failure);
+}
+
+/* Player slot */
+.lobby .players {
+  display: flex;
+}
+
+.lobby .player {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  width: 150px;
+  height: 50px;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: var(--color-others);
+  margin: 20px;
+}
+
+.lobby .player__icon {
+  display: flex;
+  height: 23px;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.lobby .player__icon:hover {
+  color: var(--ui-highlight);
+}
+
+.lobby .player.user {
+  background-color: var(--color-user);
+}
+
+.lobby .leader__icon,
+.lobby .ready__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  color: yellow;
+  right: 90%;
+  bottom: 70%;
+  z-index: 999;
+  font-size: 20px;
+  transform: rotateZ(-30deg)
+}
+
+.lobby .ready__icon {
+  background-color: black;
+  color: green;
+}
+
+.lobby .lock-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.lobby .btn.ready {
+  background-color: var(--color-success);
+}
+
+.lobby .btn.ready:hover {
+  background-color: var(--color-user);
+}

@@ -1,0 +1,561 @@
+/* Containers */
+.game .screen__container {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1260px;
+}
+
+.game .screen__title {
+  text-align: center;
+  width: 100%;
+}
+
+.game .left__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 700px;
+}
+
+.game .battle-history__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  width: 200px;
+}
+
+.game .battle-history {
+  height: 340px;
+  width: 180px;
+  border: 2px solid #fff;
+  background-color: var(--ui-body);
+}
+
+.game .middle__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+}
+
+.game .opponent__board,
+.game .player__board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  height: 340px;
+}
+
+.game .opponent__slots,
+.game .player__slots {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 580px;
+  height: 170px;
+}
+
+.game .opponent__discard,
+.game .player__discard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 170px;
+}
+
+.game .go-left,
+.game .go-right,
+.game .maximize {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  background-color: var(--ui-body);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.game .go-left:hover,
+.game .go-right:hover,
+.game .maximize:hover,
+.game .cards-preview__close:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+.game .go-left {
+  left: -30px;
+  top: 50%;
+}
+
+.game .go-right {
+  right: -30px;
+  top: 50%;
+}
+
+.game .opponent__discard .maximize,
+.game .player__discard .maximize {
+  top: 9px;
+  left: calc(100% - 5px);
+}
+
+.game .opponent__hand .maximize,
+.game .player__hand .maximize {
+  top: -2px;
+  left: calc(100% + 7px);
+}
+
+.game .opponent__board .maximize {
+  bottom: -2px;
+  left: calc(100% + 7px);
+}
+
+.game .player__board .maximize {
+  top: -2px;
+  left: calc(100% + 7px);
+}
+
+.game .opponent__slots.isNotMyTurn:hover,
+.game .player__slots.isNotMyTurn:hover,
+.game .opponent__discard.isNotMyTurn:hover,
+.game .player__discard.isNotMyTurn:hover,
+.game .battle-history__container.isNotMyTurn:hover,
+.game .player__hand.isNotMyTurn:hover {
+  background: var(--ui-highlight);
+  cursor: pointer;
+}
+
+/* Righ Container */
+.game .right__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+}
+
+.game .right__opponent,
+.game .right__player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 340px;
+}
+
+.game .opponent__hand,
+.game .player__hand {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  width: 372px;
+  height: 170px;
+  border: 2px solid #fff;
+}
+
+.game .hand__slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 150px;
+}
+
+/* Ui Stats */
+
+.game .ui-stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  width: 372px;
+  border: 2px solid #fff;
+  font-size: 30px;
+
+}
+
+.game .user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 110px;
+  height: 130px;
+  background-color: #fff;
+}
+
+.game .user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 20px;
+  width: 100px;
+  font-size: 14px;
+  border-radius: 5px;
+  background: var(--ui-body);
+}
+
+.game .stats {
+  height: 130px;
+  background-color: #fff;
+}
+
+.game .deck-amount-container,
+.game .hand-amount-container,
+.game .health-amount-container,
+.game .time-amount-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game .deck-icon,
+.game .health-icon,
+.game .hand-icon,
+.game .time-icon,
+.game .deck-amount,
+.game .health-amount,
+.game .hand-amount,
+.game .time-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+
+.game .hand-amount,
+.game .deck-amount,
+.game .time-amount {
+  width: 78px;
+}
+
+.game .card-icons,
+.game .time-amount-container,
+.game .health-amount-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 232px;
+}
+
+.game .health-amount {
+  width: 174px;
+}
+
+.game .health-icon {
+  color: rgb(199, 16, 16);
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.game .hand-icon,
+.game .deck-icon {
+  color: #423a2f;
+}
+
+/* Cards */
+.game .card__holder {
+  height: 150px;
+  width: 100px;
+  border: 2px solid #fff;
+  background-color: var(--ui-body);
+}
+
+.game.card__holder.focus {
+  box-shadow: 0 0 10px rgb(69, 214, 69);
+}
+
+.game.card__holder.focus:hover {
+  background: var(--ui-highlight);
+  cursor: pointer;
+}
+
+/* Cards Preview */
+.game .cards-preview__modal {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 1280px;
+  height: 720px;
+  padding: 10px;
+  left: -2px;
+  top: -2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  scrollbar-width: 0;
+}
+
+.game .cards-preview {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.game .cards-preview::-webkit-scrollbar {
+  display: none;
+}
+
+.game .cards-preview__modal-title {
+  background-color: var(--ui-body);
+  width: 100%;
+  padding: 10px 0;
+  font-size: 30px;
+  border: 2px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+
+.game .cards-preview__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ui-body);
+  color: #fff;
+  border: 2px solid #fff;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.game .btn.battle-phase,
+.game .btn.end-turn {
+  width: 200px;
+}
+
+.game .btn.battle-phase.disabled {
+  background-color: gray;
+  color: darkgray;
+  cursor: default;
+}
+
+.game .btn.surrender {
+  position: absolute;
+  right: 90px;
+  background-color: var(--color-failure);
+}
+
+.game .cards-preview__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+}
+
+/* Selected Card */
+.game .card-selected__container {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  background-color: var(--ui-background);
+}
+
+.game .card-selected__title,
+.game .card-selected__subtitle {
+  color: #fff;
+  text-align: center;
+}
+
+.game .card-selected__stance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game .card-selected__stance-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.game .card-selected__stance-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 80px;
+  width: 80px;
+  font-size: 60px;
+  background-color: var(--ui-body);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.game .card-selected__stance-icon:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+.game .card-selected__stance-icon.selected {
+  background-color: var(--ui-highlight);
+}
+
+.game .card-selected__card .card-container {
+  margin-left: 0;
+}
+
+/* Showdown */
+.game .showdown__container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1280px;
+  height: 720px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.game .showdown__top,
+.game .showdown__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  background-color: var(--ui-background);
+  color: #fff;
+  width: 100%;
+  height: 50%;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.game .showdown__top {
+  animation: slide-bottom 6000ms linear both;
+}
+
+.game .showdown__bottom {
+  animation: slide-top 6000ms linear both;
+}
+
+.game .showdown__versus {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--ui-background);
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  opacity: 0;
+  z-index: 2;
+  animation: rotate-scale-up 4000ms linear both;
+  animation-delay: 1000ms;
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    transform: rotateZ(0);
+    opacity: 0;
+  }
+  15% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+  }
+  85% {
+    transform: rotateZ(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-360px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-360px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(360px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(360px);
+  }
+}
+
+/* Popup */
+.game .popup__banner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  background-color: var(--ui-background);
+  border: 2px solid #fff;
+  z-index: 998;
+  animation: slide-in-and-out 3000ms linear both;
+}
+
+.game .popup__banner-text {
+  color: #fff;
+  font-size: 30px;
+}
+
+@keyframes slide-in-and-out {
+  0% {
+    transform: translateX(-900px)
+  }
+  15% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-900px)
+  }
+}

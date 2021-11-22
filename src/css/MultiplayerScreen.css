@@ -1,0 +1,210 @@
+.cancel-queue-btn {
+  width: 130px;
+  height: 45px;
+  background-color: var(--color-failure);
+  color: #fff;
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-queue-btn:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+/* Create room */
+
+.game-options {
+  background-color: var(--ui-body);
+  margin: 20px 0;
+  padding: 12px
+}
+.game-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-option input {
+  padding: 7px;
+  width: 300px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+
+}
+
+.game-option .option-label {
+  width: 100px;
+  text-align: right;
+  margin-right: 12px;
+  color: #fff;
+}
+
+.game-option .option-select {
+  width: 100px;
+  text-align: left;
+}
+
+.game-option select {
+  outline: none;
+}
+
+.create-room-btn {
+  width: 150px;
+  height: 50px;
+  background-color: var(--ui-body);
+  color: #fff;
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-room-btn:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+/*  ==== Custom Rooms finder ==== */
+
+/* rooms filter */
+.filter-form {
+  display: flex;
+  width: 400px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+}
+
+.filter-form input {
+  width: 329px;
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+
+.filter-form input:focus {
+  background-color: var(--ui-highlight);
+}
+
+.filter-form button {
+  padding: 7px;
+  border: none;
+  width: 69px;
+  cursor: pointer;
+}
+
+/* Rooms table */
+.rooms-list {
+  margin-bottom: 25px;
+  font-size: 16px;
+  width: 400px;
+  height: 300px;
+  color: #fff;
+  border: 2px solid #fff;
+  overflow: auto;
+  text-align: center;
+  scrollbar-width: none;
+}
+
+.rooms-list::-webkit-scrollbar {
+  display: none;
+}
+
+.thead .tr {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ui-body);
+  font-weight: bold;
+  height: 50px;
+  border: 2px solid #fff;
+  border-bottom: none;
+  color: #fff;
+}
+
+.th,
+.td {
+  padding: 12px 15px;
+  overflow: hidden;
+}
+
+.tbody .tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  height: 50px;
+}
+
+.tbody .tr:hover {
+  background-color: var(--ui-body);
+}
+
+.thead .th:nth-child(1),
+.tbody .td:nth-child(1) {
+  width: 134px;
+}
+.thead .th:nth-child(2),
+.tbody .td:nth-child(2) {
+  width: 84px;
+}
+.thead .th:nth-child(3),
+.tbody .td:nth-child(3) {
+  width: 86px;
+}
+.thead .th:nth-child(4),
+.tbody .td:nth-child(4) {
+  width: 75px;
+}
+
+.rooms-list__selected {
+  background-color: var(--ui-highlight);
+  color: #000;
+}
+
+.no-rooms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.loading-rooms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+.rooms-list__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.multiplayer .icon {
+  height: 50px;
+  width: 50px;
+}
+
+.multiplayer .btn.disabled {
+  background-color: gray;
+  color: darkgray;
+  cursor: default;
+}
+
+

@@ -1,0 +1,119 @@
+/* === SIDEBAR === */
+.sidebar {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Perfil */
+.user-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: var(--ui-body);
+  padding: 20px;
+}
+
+.user-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  font-size: 50px;
+  color: #fff;
+  background-color: var(--ui-background);
+  cursor: pointer;
+}
+
+.user-info__username,
+.user-info__id {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.user-info__title {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.user-info__text {
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ui-body);
+  left: 20px;
+  bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon.disconnect {
+  background-color: var(--color-failure);
+  color: #000;
+}
+
+.icon.disconnect:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+.icon.config:hover,
+.icon.mail:hover,
+.icon.help:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+.icon.active,
+.friends.active {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}
+
+/* Friends */
+.friends {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20px;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--ui-body);
+  color: #fff;
+  font-size: 30px;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.friends:hover {
+  background-color: var(--ui-highlight);
+  color: var(--ui-background);
+}

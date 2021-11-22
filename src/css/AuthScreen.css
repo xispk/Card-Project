@@ -1,0 +1,117 @@
+.auth-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  transition: 2000ms;
+  width: 500px;
+  height: 600px;
+  background-color: var(--ui-primary);
+  border: 7px solid gray;
+  box-shadow: 0 0 20px rgba(0, 0, 0);
+  border-radius: 12px;
+}
+
+.auth-container__symbol {
+  width: 100px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 5px solid gray;
+}
+
+.register-screen,
+.login-screen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--ui-primary);
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  backface-visibility: hidden;
+}
+
+.register-screen {
+  transform: rotateY(180deg);
+}
+
+.auth-container.flip {
+  --rotate-y: 180deg;
+}
+
+.register-screen__title,
+.login-screen__title {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+
+
+.redirect-to span {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 2px;
+}
+
+.redirect-to span:focus {
+  outline: 2px solid #fff;
+}
+
+.forgot-password {
+  color: #fff;
+  display: inline-block;
+  margin: 12px 0;
+  padding: 2px;
+}
+
+.forgot-password:focus {
+  outline: 2px solid #fff;
+}
+
+/* Input Validation Classes */
+.form-group input.success {
+  border: 3px solid rgb(51, 195, 51);
+}
+
+
+.form-group input.failure {
+  border: 3px solid var(--color-failure);
+}
+
+
+.check-email {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: var(--ui-background);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.check-email:focus {
+  outline: 2px solid #fff;
+}
+
+.check-email.failure {
+  background-color: var(--color-failure);
+  outline: none;
+  cursor: default;
+}
+
+.check-email.success {
+  background-color: var(--color-success);
+  outline: none;
+  cursor: default;
+}
